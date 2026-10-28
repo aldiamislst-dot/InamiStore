@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inami Store — Your Favorite Digital Store</title>
+  <meta name="description" content="Inami Store: top up game, Robux, jasa game, dan produk digital dengan proses pemesanan yang mudah lewat WhatsApp.">
+  <meta name="theme-color" content="#9db9ee">
+  <meta property="og:title" content="Inami Store — Your Favorite Digital Store">
+  <meta property="og:description" content="Top up game, Robux, jasa game, dan produk digital dengan proses pemesanan yang mudah.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-banner.png">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#katalog">Lewati ke katalog</a>
+
+  <!-- latar global -->
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <div class="stars stars-global" id="starsGlobal" aria-hidden="true"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#beranda" aria-label="Inami Store — ke beranda">
+      <svg class="logo-star" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 Q17.6 14.4 30 16 Q17.6 17.6 16 30 Q14.4 17.6 2 16 Q14.4 14.4 16 2Z"/></svg>
+      <span class="logo-text"><b>INAMI</b> STORE</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+      <a href="#beranda" class="is-active" data-spy="beranda">Beranda</a>
+      <a href="#katalog" data-spy="katalog">Katalog</a>
+      <a href="#cara-order" data-spy="cara-order">Cara Order</a>
+      <a href="#testimoni" data-spy="testimoni">Testimoni</a>
+      <a href="#kontak" data-spy="kontak">Kontak</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-wa btn-sm" type="button" data-wa="general">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.5c.3 3.4 3 6.1 6.5 6.5l1.2-1.6-2.2-1-1 .8a4.6 4.6 0 0 1-2-2l.8-1-1-2.2z" fill="currentColor"/></svg>
+        <span class="wa-label">WhatsApp</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="beranda" aria-labelledby="heroTitle">
+      <div class="hero-sky" aria-hidden="true">
+        <div class="stars" id="starsHero"></div>
+        <div class="moon"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow rise" style="--i:0">✦ Toko Digital Favoritmu</span>
+          <h1 id="heroTitle" class="rise" style="--i:1">Welcome to <span class="grad-text">Inami Store</span></h1>
+          <p class="hero-sub rise" style="--i:2">Your Favorite Digital Store</p>
+          <p class="hero-desc rise" style="--i:3">Top up game, Robux, jasa game, dan produk digital dengan proses pemesanan yang mudah.</p>
+          <div class="hero-cta rise" style="--i:4">
+            <a class="btn btn-primary" href="#katalog">Lihat Katalog</a>
+            <button class="btn btn-ghost" type="button" data-wa="order">Pesan Sekarang</button>
+          </div>
+          <ul class="hero-chips rise" style="--i:5" aria-label="Kategori cepat">
+            <li><button type="button" data-cat-jump="robux">Robux</button></li>
+            <li><button type="button" data-cat-jump="topup">Top Up Game</button></li>
+            <li><button type="button" data-cat-jump="jasa">Jasa Game</button></li>
+            <li><button type="button" data-cat-jump="digital">Produk Digital</button></li>
+          </ul>
+        </div>
+
+        <div class="hero-art" id="heroArt">
+          <div class="layer layer-glow" aria-hidden="true"><div class="art-glow"></div></div>
+          <div class="layer layer-chars">
+            <img class="chars" src="assets/characters.png" width="578" height="432" alt="Dua karakter maskot original Inami Store: gadis berambut biru perak yang melambai dan pemuda berhoodie navy dengan headphone" fetchpriority="high" decoding="async">
+          </div>
+          <div class="layer layer-orn" aria-hidden="true">
+            <span class="orn orn-a"></span>
+            <span class="orn orn-b"></span>
+            <span class="orn orn-c"></span>
+            <span class="orn orn-d"></span>
+            <span class="badge badge-1">✦ Order via WhatsApp</span>
+            <span class="badge badge-2">3 Admin Siap Membantu</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KATALOG ================= -->
+    <section class="section" id="katalog" aria-labelledby="katalogTitle">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ Katalog</span>
+          <h2 id="katalogTitle">Pilih Produk Favoritmu</h2>
+          <p>Robux, top up game, jasa game, dan produk digital. Klik “Pesan Sekarang” untuk melanjutkan ke WhatsApp.</p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="tabs" id="tabs" role="group" aria-label="Filter kategori">
+            <span class="tab-indicator" id="tabIndicator" aria-hidden="true"></span>
+            <!-- tombol kategori dibuat oleh script.js -->
+          </div>
+          <div class="subtabs" id="subTabs" aria-label="Subkategori produk" hidden></div>
+          <div class="tools-row">
+            <label class="search">
+              <span class="visually-hidden">Cari produk</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <input id="searchInput" type="search" placeholder="Cari produk, mis. Robux, Diamonds…" autocomplete="off">
+            </label>
+            <label class="sort">
+              <span class="visually-hidden">Urutkan</span>
+              <select id="sortSelect">
+                <option value="default">Urutan bawaan</option>
+                <option value="asc">Harga terendah</option>
+                <option value="desc">Harga tertinggi</option>
+              </select>
+            </label>
+          </div>
+          <p class="result-info" id="resultInfo" aria-live="polite"></p>
+        </div>
+
+        <div class="grid-wrap">
+          <div class="grid" id="productGrid" aria-live="polite"></div>
+        </div>
+        <p class="price-note" id="priceNote">* Harga pada katalog adalah <b>contoh (placeholder)</b>. Harga Top Up Robux via Username dihitung dari HPP Rp14.500 per 100 Robux dengan margin 7%. Kategori Roblox lainnya dan harga produk game lain masih perlu dikonfirmasi admin.</p>
+        <noscript><p class="price-note">Aktifkan JavaScript untuk melihat katalog produk.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ================= CARA ORDER ================= -->
+    <section class="section" id="cara-order" aria-labelledby="orderTitle">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ Cara Order</span>
+          <h2 id="orderTitle">Pesan dalam 4 Langkah</h2>
+          <p>Sederhana dan tanpa ribet. Kamu tinggal pilih, chat, dan konfirmasi.</p>
+        </div>
+        <ol class="steps">
+          <li class="step reveal" style="--d:.0s">
+            <span class="step-no">1</span>
+            <h3>Pilih Produk</h3>
+            <p>Jelajahi katalog, gunakan pencarian atau filter kategori untuk menemukan produk yang kamu mau.</p>
+          </li>
+          <li class="step reveal" style="--d:.1s">
+            <span class="step-no">2</span>
+            <h3>Klik “Pesan Sekarang”</h3>
+            <p>WhatsApp akan terbuka dengan pesan otomatis berisi nama produk dan harganya.</p>
+          </li>
+          <li class="step reveal" style="--d:.2s">
+            <span class="step-no">3</span>
+            <h3>Kirim &amp; Konfirmasi</h3>
+            <p>Kirim pesan di WhatsApp, lalu admin akan mengonfirmasi stok dan detail pesananmu.</p>
+          </li>
+          <li class="step reveal" style="--d:.3s">
+            <span class="step-no">4</span>
+            <h3>Bayar &amp; Terima</h3>
+            <p>Lakukan pembayaran sesuai arahan admin, lalu pesananmu diproses.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN ================= -->
+    <section class="section" id="keunggulan" aria-labelledby="unggulTitle">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ Keunggulan</span>
+          <h2 id="unggulTitle">Kenapa Inami Store?</h2>
+          <p>Toko digital dengan suasana yang nyaman, dan proses yang jelas.</p>
+        </div>
+        <div class="features">
+          <article class="feature reveal" style="--d:0s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+            <h3>Order via WhatsApp</h3>
+            <p>Pesan langsung ke admin lewat chat, tanpa perlu daftar akun yang ribet.</p>
+          </article>
+          <article class="feature reveal" style="--d:.08s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg></span>
+            <h3>Cek Stok Dulu</h3>
+            <p>Ketersediaan produk dikonfirmasi admin sebelum kamu melakukan pembayaran.</p>
+          </article>
+          <article class="feature reveal" style="--d:.16s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg></span>
+            <h3>Harga Jelas</h3>
+            <p>Harga tampil di katalog dan dikonfirmasi ulang saat kamu memesan.</p>
+          </article>
+          <article class="feature reveal" style="--d:.24s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg></span>
+            <h3>Katalog Beragam</h3>
+            <p>Robux, top up game, jasa game, hingga produk digital dalam satu toko.</p>
+          </article>
+          <article class="feature reveal" style="--d:.32s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span>
+            <h3>Admin Ramah</h3>
+            <p>Tiga admin siap menjawab pertanyaanmu seputar produk dan pemesanan.</p>
+          </article>
+          <article class="feature reveal" style="--d:.4s">
+            <span class="f-ico"><svg viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></span>
+            <h3>Nyaman di Semua Perangkat</h3>
+            <p>Tampilan responsif untuk HP, tablet, maupun laptop.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONI (PLACEHOLDER) ================= -->
+    <section class="section" id="testimoni" aria-labelledby="testiTitle">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ Testimoni</span>
+          <h2 id="testiTitle">Kata Pelanggan</h2>
+          <p>Bagian ini masih berisi <b>contoh placeholder</b>. Ganti dengan ulasan asli pelanggan (dengan izin mereka) di <code>index.html</code>.</p>
+        </div>
+        <div class="testi-grid">
+          <figure class="testi reveal" style="--d:0s">
+            <span class="ph-tag">Contoh · Placeholder</span>
+            <blockquote>Tempat untuk ulasan asli pelanggan. Ganti teks ini dengan testimoni yang sebenarnya.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">?</span> Nama Pelanggan 1 <small>Produk yang dibeli</small></figcaption>
+          </figure>
+          <figure class="testi reveal" style="--d:.1s">
+            <span class="ph-tag">Contoh · Placeholder</span>
+            <blockquote>Tempat untuk ulasan asli pelanggan. Kamu bisa menambah atau menghapus kartu ini sesuai kebutuhan.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">?</span> Nama Pelanggan 2 <small>Produk yang dibeli</small></figcaption>
+          </figure>
+          <figure class="testi reveal" style="--d:.2s">
+            <span class="ph-tag">Contoh · Placeholder</span>
+            <blockquote>Tempat untuk ulasan asli pelanggan. Pastikan ulasan yang ditampilkan memang berasal dari pelanggan nyata.</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">?</span> Nama Pelanggan 3 <small>Produk yang dibeli</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faqTitle">
+      <div class="container narrow">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ FAQ</span>
+          <h2 id="faqTitle">Pertanyaan yang Sering Muncul</h2>
+        </div>
+        <div class="faq reveal" id="faqList">
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa1" id="fq1">Bagaimana cara memesan?<span class="faq-ico" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Pilih produk di katalog, klik “Pesan Sekarang”, lalu WhatsApp akan terbuka dengan pesan otomatis. Kirim pesan tersebut ke admin dan tunggu konfirmasi.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa2" id="fq2">Apakah pesanan terkirim otomatis?<span class="faq-ico" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>Tidak. Website hanya membuka WhatsApp dengan pesan yang sudah terisi. Kamu tetap perlu menekan tombol kirim di WhatsApp agar admin menerima pesananmu.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa3" id="fq3">Apa metode pembayarannya?<span class="faq-ico" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Metode pembayaran akan diinformasikan admin saat konfirmasi pesanan. <i>(Pemilik toko: ganti teks ini dengan metode pembayaran yang sebenarnya.)</i></p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa4" id="fq4">Berapa lama pesanan diproses?<span class="faq-ico" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Lama proses bergantung pada jenis produk dan antrean. Admin akan memberi perkiraan waktu saat mengonfirmasi pesananmu.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa5" id="fq5">Apakah harga di katalog sudah final?<span class="faq-ico" aria-hidden="true"></span></button></h3>
+            <div class="faq-a" id="fa5" role="region" aria-labelledby="fq5"><div><p>Harga yang tampil saat ini adalah contoh. Harga final dan ketersediaan produk selalu dikonfirmasi admin sebelum pembayaran.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KONTAK ================= -->
+    <section class="section" id="kontak" aria-labelledby="kontakTitle">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">✦ Kontak</span>
+          <h2 id="kontakTitle">Hubungi Admin Inami Store</h2>
+          <p>Pilih salah satu admin untuk bertanya langsung lewat WhatsApp.</p>
+        </div>
+        <div class="contact-grid" id="contactGrid"></div>
+        <div class="ig-card reveal">
+          <div>
+            <h3>Ikuti kami di Instagram</h3>
+            <p>Update produk dan info terbaru Inami Store.</p>
+          </div>
+          <a class="btn btn-ghost" id="igLink" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></svg>
+            <span id="igLabel">Instagram Inami Store</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo" href="#beranda"><svg class="logo-star" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 Q17.6 14.4 30 16 Q17.6 17.6 16 30 Q14.4 17.6 2 16 Q14.4 14.4 16 2Z"/></svg><span class="logo-text"><b>INAMI</b> STORE</span></a>
+        <p>Your Favorite Digital Store.</p>
+      </div>
+      <nav class="footer-links" aria-label="Tautan footer">
+        <a href="#katalog">Katalog</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Inami Store. Hak cipta dilindungi.</p>
+      <p class="disclaimer">Inami Store adalah toko independen. Nama game, merek, dan produk milik pemegang hak masing-masing dan hanya digunakan sebagai penjelasan produk.</p>
+    </div>
+  </footer>
+
+  <!-- tombol WhatsApp mengambang -->
+  <button class="fab-wa" type="button" data-wa="general" aria-label="Chat admin lewat WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.5c.3 3.4 3 6.1 6.5 6.5l1.2-1.6-2.2-1-1 .8a4.6 4.6 0 0 1-2-2l.8-1-1-2.2z" fill="currentColor"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
